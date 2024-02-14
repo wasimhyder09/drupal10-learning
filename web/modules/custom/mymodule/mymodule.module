@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * This file demonstrates how to use hook functions
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function mymodule_cron() {
+  // \Drupal::messenger()->addMessage(t("Hello from mymodue cron hook"));
+}
+
+/**
+ * Implements hook_from_alter().
+ */
+function mymodule_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  \Drupal::messenger()->addMessage(t('Id of the form is= ').$form_id);
+  if($form_id === 'node_article_edit_form') {
+    $form['actions']['submit']['#value'] = 'Save this awesome article';
+  }
+}
