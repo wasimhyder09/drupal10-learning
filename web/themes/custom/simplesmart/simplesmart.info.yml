@@ -1,0 +1,7 @@
+name: Simple Smart Claro Version
+description: A slack and practical theme for curious minds
+type: theme
+core_version_requirement: ^9 || ^10
+core: 9.x
+base theme: claro
+screenshot: simplesmartscreenshot.jpeg
