@@ -5,3 +5,10 @@ core_version_requirement: ^9 || ^10
 core: 9.x
 base theme: claro
 screenshot: simplesmartscreenshot.jpeg
+regions:
+  header: Header
+  simplesmartmenu: Navigation
+  content: Content
+  footer: Footer
+  page_top: Page Top
+  page_bottom: Page Bottom
